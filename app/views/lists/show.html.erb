@@ -1,0 +1,13 @@
+<h1><strong>list-name</strong></h1>
+  <p>
+    <%= @list.name %>
+  </p>
+
+  <div>
+    <%= link_to "Add a bookmark", new_list_bookmark_path(@list) %>
+  </div>
+
+
+  <div>
+    <%= link_to "Back to list", lists_path %>
+  </div>
