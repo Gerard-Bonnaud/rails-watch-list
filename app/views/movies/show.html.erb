@@ -4,5 +4,5 @@
 <hr>
 <%= image_tag(@movie.poster_url, size: '200x200') %>
 <hr>
-<p class="text-dark">Rating :<%= @movie.rating %></p>
+<p class="text-dark">Rating :<%= @movie.rating.round %>/10</p>
 </div>
