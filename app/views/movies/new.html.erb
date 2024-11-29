@@ -1,7 +1,14 @@
-<%= simple_form_for(@movie) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :rating %>
-  <%= f.input :overview %>
-  <%= f.input :poster_url %>
+<div class="container-sm mt-5">
+  <%= simple_form_for(@movie) do |f| %>
+  <div class="text-primary">
+    <%= f.input :title %>
+    <%= f.input :rating %>
+    <%= f.input :overview %>
+    <%= f.input :poster_url %>
+  </div>
+
+  <div class="btn btn-primary">
   <%= f.submit %>
-<% end %>
+  </div>
+  <% end %>
+</div>

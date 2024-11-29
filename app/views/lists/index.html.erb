@@ -1,12 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Movies-list</h1>
+<div class="container-sm mt-5">
+<h1 class="text-primary"><strong>Movies-list</strong></h1>
+
 <% @lists.each do |list| %>
+
+
 <ul>
-<li><%= link_to list.name, list_path(list) %></li>
+<li ><%= link_to list.name, list_path(list), class: "link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"%></li>
 </ul>
 <% end %>
 
-<p><%= link_to "Add new list", new_list_path %></p>
+<%= link_to "Add new list", new_list_path, class: "btn btn-primary" %>
 
-<p><%= link_to "Add movie", new_movie_path(@movie) %></p>
+<%= link_to "Add movie", new_movie_path(@movie), class: "btn btn-dark" %>
+</div>

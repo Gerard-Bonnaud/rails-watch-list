@@ -1,5 +1,12 @@
 <%= simple_form_for [@list, @bookmark] do |f| %>
+<div class="container-sm mt-3">
+  <div class="text-primary">
   <%= f.input :comment %>
   <%= f.association :movie %>
+  </div>
+
+  <div class="btn btn-primary">
   <%= f.submit %>
+  </div>
+</div>
 <% end %>
